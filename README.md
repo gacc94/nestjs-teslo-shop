@@ -12,12 +12,22 @@ docker-compose up -d
 
 
 ## Instalaciones
+0. Morgan ()
+~~~
+pnpm add morgan
+~~~
+~~~
+pnpm add -D @types/morgan
+~~~
 1. Configuracion de variables de entorno
 ~~~
 pnpm add @nestjs/config
 ~~~
-2. La base de datos
+1. typeorm y postgresql
 ~~~
 pnpm add  @nestjs/typeorm typeorm pg
 ~~~
-3. 
+1. Class validator y class transformer
+~~~
+pnpm add class-validator class-transformer
+~~~

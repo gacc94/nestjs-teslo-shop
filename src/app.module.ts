@@ -10,6 +10,7 @@ import { ProductsModule } from './products/products.module';
       envFilePath: '.env',
       cache: true,
       ignoreEnvFile: false,
+      expandVariables: true,
     }),
     TypeOrmModule.forRoot({
       type: 'postgres',
