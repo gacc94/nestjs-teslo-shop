@@ -2,7 +2,16 @@
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
 
-# Instalaciones
+# Teslo-shop API
+
+## Pasos
+1. Crear Base de datos
+~~~
+docker-compose up -d
+~~~
+
+
+## Instalaciones
 1. Configuracion de variables de entorno
 ~~~
 pnpm add @nestjs/config
