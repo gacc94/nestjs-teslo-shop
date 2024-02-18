@@ -11,7 +11,11 @@ async function bootstrap() {
   //TODO: add global prefixer
   app.setGlobalPrefix('/api')
   //TODO: add morgan logger
-  app.use(morgan('dev', {}));
+  app.use(morgan('dev', {
+    stream: {
+      write: (message) => console.log(message)
+    }
+  }));
   //TODO: Add CORS
   app.enableCors(CORS);
   //TODO: add global pipe
