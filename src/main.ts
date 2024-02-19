@@ -38,6 +38,6 @@ async function bootstrap() {
   //TODO: add global guards
   app.useGlobalGuards();
   //TODO: add global pipes  
-  await app.listen(configService.get('PORT'));
+  await app.listen(configService.get<number>('PORT'));
 }
 bootstrap();

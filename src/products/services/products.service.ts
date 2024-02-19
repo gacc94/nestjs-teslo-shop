@@ -19,7 +19,7 @@ export class ProductsService {
   async create(createProductDto: CreateProductDto) {
     try {
       const product = this.productRepository.create(createProductDto);
-      console.log({ product });
+      // console.log({ product });
       return await this.productRepository.save(product);
     } catch (error: any) {
       this.handleException(error);
